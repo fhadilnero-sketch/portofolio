@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hariz — Web Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Hariz<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#skills">Keahlian</a></li>
+        <li><a href="#projects">Proyek</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content">
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-ring">
+          <img src="assets/images/poto1.jpg" alt="Foto Profil Hariz" class="hero-photo" id="heroPhoto" />
+          <div class="hero-photo-placeholder" id="heroPhotoPlaceholder">
+            <i class="fa-solid fa-user"></i>
+          </div>
+        </div>
+        <div class="hero-photo-badge"><i class="fa-solid fa-code"></i></div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-greeting">Halo, saya</p>
+        <h1 class="hero-name">Hariz</h1>
+        <h2 class="hero-role">
+          <span class="typewriter" id="typewriter"></span><span class="cursor">|</span>
+        </h2>
+        <p class="hero-desc">
+          Seorang web developer muda yang bersemangat membangun solusi digital dengan kode yang bersih, tampilan yang menarik, dan fungsionalitas yang optimal.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">Lihat Proyek <i class="fa-solid fa-arrow-down"></i></a>
+          <a href="#contact" class="btn btn-outline">Hubungi Saya <i class="fa-solid fa-paper-plane"></i></a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/fhadilnero-sketch" target="_blank" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://wa.me/6285157500960" target="_blank" class="social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="mailto:hariz.f072@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll ke bawah">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Tentang <span>Saya</span></h2>
+      <div class="about-grid">
+        <div class="about-photo-wrap" data-aos="fade-right">
+          <div class="about-photo-frame">
+            <img src="assets/images/poto2.jpg" alt="Hariz sedang coding" class="about-photo" id="aboutPhoto" />
+            <div class="about-photo-placeholder" id="aboutPhotoPlaceholder">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+          </div>
+          <div class="about-card-float">
+            <i class="fa-solid fa-terminal"></i>
+            <span>Passionate Coder</span>
+          </div>
+        </div>
+        <div class="about-text" data-aos="fade-left">
+          <h3>Siapa saya?</h3>
+          <p>
+            Nama saya <strong>Hariz</strong>, seorang pelajar dan developer muda yang memiliki passion kuat di bidang <strong>pemrograman dan pengembangan web</strong>. Sejak pertama kali mengenal dunia coding, saya langsung jatuh cinta dengan proses membangun sesuatu dari nol hanya menggunakan kode.
+          </p>
+          <p>
+            Saya percaya bahwa teknologi adalah alat paling powerful untuk memecahkan masalah nyata. Oleh karena itu, saya terus belajar, bereksperimen, dan membangun proyek-proyek kecil yang secara bertahap meningkatkan kemampuan saya.
+          </p>
+          <p>
+            Hobi saya adalah <strong>coding</strong>, mempelajari teknologi baru, dan membangun website yang tidak hanya berfungsi dengan baik tapi juga enak dilihat.
+          </p>
+          <div class="about-info-grid">
+            <div class="info-item"><span class="info-label"><i class="fa-solid fa-user"></i> Nama</span><span>Hariz</span></div>
+            <div class="info-item"><span class="info-label"><i class="fa-solid fa-map-marker-alt"></i> Domisili</span><span>Indonesia</span></div>
+            <div class="info-item"><span class="info-label"><i class="fa-solid fa-briefcase"></i> Bidang</span><span>Web Development</span></div>
+            <div class="info-item"><span class="info-label"><i class="fa-solid fa-graduation-cap"></i> Status</span><span>Pelajar & Developer</span></div>
+            <div class="info-item"><span class="info-label"><i class="fa-solid fa-envelope"></i> Email</span><span>hariz.f072@gmail.com</span></div>
+            <div class="info-item"><span class="info-label"><i class="fa-brands fa-whatsapp"></i> WhatsApp</span><span>085157500960</span></div>
+            <div class="info-item"><span class="info-label"><i class="fa-brands fa-github"></i> GitHub</span><span>fhadilnero-sketch</span></div>
+          </div>
+          <a href="#" class="btn btn-primary" download style="display:none">Download CV <i class="fa-solid fa-download"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Keahlian <span>Saya</span></h2>
+      <p class="section-subtitle" data-aos="fade-up">Teknologi dan tools yang saya kuasai dalam pengembangan web</p>
+
+      <div class="skills-categories" data-aos="fade-up">
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class="fa-solid fa-code"></i>
+            <h3>Frontend</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info"><span>HTML5</span><span>90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>CSS3</span><span>85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>JavaScript</span><span>75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Tailwind CSS</span><span>80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Bootstrap</span><span>78%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class="fa-solid fa-server"></i>
+            <h3>Backend & DB</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info"><span>PHP</span><span>60%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Python</span><span>55%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Node.js</span><span>50%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="50"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>MySQL</span><span>65%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <i class="fa-solid fa-wrench"></i>
+            <h3>Tools</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info"><span>Git & GitHub</span><span>80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>VS Code</span><span>90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Responsive Design</span><span>85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>UI/UX Basics</span><span>70%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech Badges -->
+      <div class="tech-badges" data-aos="fade-up">
+        <span class="badge"><i class="fa-brands fa-html5"></i> HTML5</span>
+        <span class="badge"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+        <span class="badge"><i class="fa-brands fa-js"></i> JavaScript</span>
+        <span class="badge"><i class="fa-brands fa-php"></i> PHP</span>
+        <span class="badge"><i class="fa-brands fa-python"></i> Python</span>
+        <span class="badge"><i class="fa-brands fa-node-js"></i> Node.js</span>
+        <span class="badge"><i class="fa-brands fa-github"></i> GitHub</span>
+        <span class="badge"><i class="fa-solid fa-database"></i> MySQL</span>
+        <span class="badge"><i class="fa-solid fa-mobile-alt"></i> Responsive</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Proyek <span>Saya</span></h2>
+      <p class="section-subtitle" data-aos="fade-up">Pengalaman membangun website dari awal hingga selesai</p>
+
+      <div class="projects-grid">
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="project-icon"><i class="fa-solid fa-user-circle"></i></div>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <h3>Website Profil Pribadi</h3>
+          <p>Website statis pertama yang saya buat untuk menampilkan data diri, hobi, dan informasi pribadi secara sederhana namun menarik.</p>
+          <div class="project-footer">
+            <span class="project-year"><i class="fa-solid fa-calendar"></i> 2023</span>
+            <div class="project-links">
+              <a href="demo/profil.html" target="_blank" class="project-link" title="Demo"><i class="fa-solid fa-eye"></i></a>
+              <a href="https://github.com/fhadilnero-sketch" target="_blank" class="project-link" title="Source Code"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-icon"><i class="fa-solid fa-shop"></i></div>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>Bootstrap</span>
+          </div>
+          <h3>Website Toko Sederhana</h3>
+          <p>Halaman depan toko online dengan tampilan produk, harga, dan tombol beli. Desain responsif menggunakan Bootstrap untuk tampilan mobile-friendly.</p>
+          <div class="project-footer">
+            <span class="project-year"><i class="fa-solid fa-calendar"></i> 2023</span>
+            <div class="project-links">
+              <a href="demo/toko.html" target="_blank" class="project-link" title="Demo"><i class="fa-solid fa-eye"></i></a>
+              <a href="https://github.com/fhadilnero-sketch" target="_blank" class="project-link" title="Source Code"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-icon"><i class="fa-solid fa-list-check"></i></div>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <h3>Aplikasi To-Do List</h3>
+          <p>Aplikasi manajemen tugas interaktif dengan fitur tambah, hapus, edit, dan tandai tugas selesai. Data tersimpan di LocalStorage browser.</p>
+          <div class="project-footer">
+            <span class="project-year"><i class="fa-solid fa-calendar"></i> 2024</span>
+            <div class="project-links">
+              <a href="demo/todo.html" target="_blank" class="project-link" title="Demo"><i class="fa-solid fa-eye"></i></a>
+              <a href="https://github.com/fhadilnero-sketch" target="_blank" class="project-link" title="Source Code"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-icon"><i class="fa-solid fa-rocket"></i></div>
+          <div class="project-tags">
+            <span>HTML</span><span>Tailwind CSS</span><span>JS</span>
+          </div>
+          <h3>Landing Page Bisnis</h3>
+          <p>Landing page profesional dan responsif untuk bisnis lokal, lengkap dengan section hero, fitur produk, testimoni, dan form kontak.</p>
+          <div class="project-footer">
+            <span class="project-year"><i class="fa-solid fa-calendar"></i> 2024</span>
+            <div class="project-links">
+              <a href="demo/landing.html" target="_blank" class="project-link" title="Demo"><i class="fa-solid fa-eye"></i></a>
+              <a href="https://github.com/fhadilnero-sketch" target="_blank" class="project-link" title="Source Code"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card featured" data-aos="fade-up" data-aos-delay="400">
+          <div class="project-badge">Featured</div>
+          <div class="project-icon"><i class="fa-solid fa-briefcase"></i></div>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <h3>Portofolio Web Interaktif</h3>
+          <p>Proyek ini! Portofolio pribadi modern dengan animasi, dark mode, efek typewriter, scroll reveal, dan desain yang sepenuhnya responsif.</p>
+          <div class="project-footer">
+            <span class="project-year"><i class="fa-solid fa-calendar"></i> 2025</span>
+            <div class="project-links">
+              <a href="index.html" target="_blank" class="project-link" title="Demo"><i class="fa-solid fa-eye"></i></a>
+              <a href="https://github.com/fhadilnero-sketch" target="_blank" class="project-link" title="Source Code"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Hubungi <span>Saya</span></h2>
+      <p class="section-subtitle" data-aos="fade-up">Ada proyek, kolaborasi, atau sekedar ingin ngobrol? Kirim pesan!</p>
+
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:hariz.f072@gmail.com" style="color:var(--text2);font-size:0.88rem;">hariz.f072@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div>
+              <h4>WhatsApp</h4>
+              <a href="https://wa.me/6285157500960" target="_blank" style="color:var(--text2);font-size:0.88rem;">085157500960</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+            <div>
+              <h4>GitHub</h4>
+              <a href="https://github.com/fhadilnero-sketch" target="_blank" style="color:var(--text2);font-size:0.88rem;">fhadilnero-sketch</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Lokasi</h4>
+              <p>Indonesia</p>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://github.com/fhadilnero-sketch" target="_blank" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://wa.me/6285157500960" target="_blank" class="social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:hariz.f072@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <form class="contact-form" data-aos="fade-left" id="contactForm">
+          <div class="form-group">
+            <label for="name">Nama</label>
+            <input type="text" id="name" name="name" placeholder="Nama kamu" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="email@kamu.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subjek</label>
+            <input type="text" id="subject" name="subject" placeholder="Subjek pesan" />
+          </div>
+          <div class="form-group">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tulis pesanmu di sini..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            Kirim Pesan <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">Hariz<span>.</span></a>
+          <p>Web Developer &amp; Problem Solver</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#skills">Keahlian</a></li>
+          <li><a href="#projects">Proyek</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+        <div class="footer-socials">
+          <a href="https://github.com/fhadilnero-sketch" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://wa.me/6285157500960" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="mailto:hariz.f072@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Hariz. All rights reserved. Built with <i class="fa-solid fa-heart"></i> &amp; code.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
